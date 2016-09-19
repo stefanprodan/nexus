@@ -1,5 +1,6 @@
 # Nexus Repository Manager OSS
 
+A Sonatype Nexus Repository Manager image based on Alpine with OpenJDK 8.
 
 Running Nexus with:
 * Repository on port 8081
