@@ -1,5 +1,7 @@
 # Nexus Repository Manager OSS
 
+[![](https://images.microbadger.com/badges/image/stefanprodan/nexus.svg)](https://microbadger.com/images/stefanprodan/nexus "Get your own image badge on microbadger.com")
+
 A Sonatype Nexus Repository Manager image based on Alpine with OpenJDK 8.
 
 Running Nexus with:
