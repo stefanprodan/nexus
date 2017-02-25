@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 MAINTAINER Stefan Prodan
 
-ENV NEXUS_VERSION="3.2.0-01" \
+ENV NEXUS_VERSION="3.2.1-01" \
     NEXUS_DATA="/nexus-data" \
     JAVA_MIN_MEM="1200M" \
     JAVA_MAX_MEM="1200M" \
