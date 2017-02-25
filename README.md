@@ -121,6 +121,7 @@ docker run -d -p 80:80 -p 443:443 --name nginx \
 
 * 24 Dec 2016  - Nexus 3.2.0-01
 * 19 Sept 2016 - Nexus 3.0.2-02
+* 25 Feb 2017 - Nexus 3.2.1-01
 
 
 
