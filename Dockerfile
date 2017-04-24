@@ -24,8 +24,9 @@ RUN set -x \
 		-e "s|karaf.base=.|karaf.base=/opt/nexus-${NEXUS_VERSION}|g" \
 		-e "s|karaf.etc=etc|karaf.etc=/opt/nexus-${NEXUS_VERSION}/etc|g" \
 		-e "s|java.util.logging.config.file=etc|java.util.logging.config.file=/opt/nexus-${NEXUS_VERSION}/etc|g" \
-		-e "s|karaf.data=data|karaf.data=${NEXUS_DATA}|g" \
-		-e "s|java.io.tmpdir=data/tmp|java.io.tmpdir=${NEXUS_DATA}/tmp|g" \
+		-e "s|-XX:LogFile=../sonatype-work/nexus3/log/jvm.log|-XX:LogFile=${NEXUS_DATA}/log/jvm.log|g" \
+		-e "s|karaf.data=../sonatype-work/nexus3|karaf.data=${NEXUS_DATA}|g" \
+		-e "s|java.io.tmpdir=../sonatype-work/nexus3/tmp|java.io.tmpdir=${NEXUS_DATA}/tmp|g" \
 		-i "/opt/nexus-${NEXUS_VERSION}/bin/nexus.vmoptions" \
 	&& mkdir -p "${NEXUS_DATA}" \
 	&& chown -R nexus "${NEXUS_DATA}"
